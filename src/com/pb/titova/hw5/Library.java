@@ -41,6 +41,10 @@ public class Library {
         reader2.takeBook2("Приключения, Словарь, Энциклопедия");
         reader2.takeBook3(book1, book2, book3);
 
+        reader2.returnBook1( 3);
+        reader2.returnBook2("Приключения, Словарь, Энциклопедия");
+        reader2.returnBook3(book1, book2, book3);
+
         System.out.println("Список читателей:");
         for (Reader reader : readers) {
             System.out.println( reader.getInfo());

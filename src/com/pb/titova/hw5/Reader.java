@@ -57,9 +57,12 @@ public class Reader {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
     public void takeBook1(int number) {
         System.out.println(this.fullname + " взял " + number + " книги.");
+        System.out.println();
     }
+
 
     public void takeBook2(String... books) {
         System.out.println(this.fullname + " взял книги:");
@@ -77,11 +80,12 @@ public class Reader {
         System.out.println();
     }
 
-    public void returnBook(int number) {
+    public void returnBook1(int number) {
         System.out.println(this.fullname + " вернул " + number + " книги.");
+        System.out.println();
     }
 
-    public void returnBook(String... books) {
+    public void returnBook2(String... books) {
         System.out.println(this.fullname + " вернул книги:");
         for (String book : books) {
             System.out.println(book);
@@ -89,10 +93,10 @@ public class Reader {
         System.out.println();
     }
 
-    public void returnBook(Book... books) {
+    public void returnBook3(Book... books) {
         System.out.println(this.fullname + " вернул книги:");
         for (Book book : books) {
-            System.out.println(book.getName() + book.getAuthor() + book.getYearpub());
+            System.out.println(book.getName()  +"("+ book.getAuthor() + book.getYearpub()+")");
         }
         System.out.println();
     }
