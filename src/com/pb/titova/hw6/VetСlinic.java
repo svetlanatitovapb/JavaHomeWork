@@ -13,10 +13,10 @@ public class VetСlinic {
         Class clazz = vt.getClass();
         System.out.println(clazz.getName());
         System.out.println(Arrays.toString(clazz.getMethods()));
+        Class vtClazz = Class.forName("com.pb.titova.hw6.Veterinarian");
 
-
-        for (Animal animal : animals) {
-            veterinarian.treatAnimal(animal);
+        for (int i =0; i<animals.length; i++) {
+            vt.treatAnimal(animals[i]);
         }
 
     }
