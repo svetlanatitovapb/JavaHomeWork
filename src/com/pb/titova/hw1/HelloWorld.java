@@ -5,3 +5,6 @@ public class HelloWorld {
         System.out.println("Hello World");
     }
 }
+
+
+// Создать в пакете hw1 класс HelloWorld с кодом печатающим сообщение "Hello World"
