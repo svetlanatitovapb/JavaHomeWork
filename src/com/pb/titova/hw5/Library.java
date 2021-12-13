@@ -105,3 +105,16 @@ public class Library {
 //- печатаются все книги.
 //- печатаются все читатели.
 //- демонстрируется работа всех вариантов методов takeBook() и returnBook().
+
+
+// mentor's remark
+
+// На будущее методы takeBook() и returnBook() должны иметь именно такое название и быть перегруженными.
+//Т.е. в итоге должно быть:
+//public void takeBook(int number) {
+////your code
+//}
+//
+//public void takeBook(String... books) {
+//        //your code
+//    }

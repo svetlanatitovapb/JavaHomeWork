@@ -69,3 +69,6 @@ boolean err=false;
 //В main создать один объект класса Auth.
 //Предложить пользователю сперва зарегистрироваться (signUp) потом войти на сайт (signIn).
 //Обработать исключения методов signUp signIn с помощью блоков try-catch.
+
+
+//https://github.com/anatoliy-shkabara-pb/lesson-10/tree/master/src/hw8
