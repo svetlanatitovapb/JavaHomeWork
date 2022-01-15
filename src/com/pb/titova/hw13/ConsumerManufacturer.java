@@ -2,11 +2,12 @@ package com.pb.titova.hw13;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Scanner;
 
 public class ConsumerManufacturer {
     public static class Consumer implements Runnable {
         private final Queue<Integer> dataBuffer;
-        private int size;
+        private final int size;
         public Consumer(Queue<Integer> dataBuffer, int size) {
             this.dataBuffer = dataBuffer;
             this.size = size;
@@ -36,7 +37,7 @@ public class ConsumerManufacturer {
     public static class Manufacturer implements Runnable {
 
         private final Queue <Integer> dataBuffer;
-        private int size;
+        private final int size;
         public Manufacturer(Queue<Integer> dataBuffer, int size){
             this.dataBuffer = dataBuffer;
             this.size = size;
@@ -65,12 +66,14 @@ public class ConsumerManufacturer {
         }
     }
     public static void main(String[] args){
+
         LinkedList<Integer> dataBuffer = new LinkedList<>();
-        int size=5;
+        int size=3;
         Thread manufacturer = new Thread(new Manufacturer(dataBuffer,size),"Manufacturer");
         Thread consumer = new Thread(new Consumer(dataBuffer,size),"Consumer");
         manufacturer.start();
         consumer.start();
+
     }
 }
 
